@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Creating top navbar-->
+
+    <ul class="ul">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li class="dropdown"><a href="#" class="dropbtn">Dropdown</a>
+
+            <div class="dropdown-content">
+                <a href="#1">Link 1</a>
+                <a href="#2">Link 2</a>
+                <a href="#3">Link 3</a>
+            </div>
+        </li>
+        <div class="nav-right">
+            <li><a href="#login">Login</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+        </div>
+
+    </ul>
+
+    
+    <div class="checkout">
+        <form action="confirm-order.html">
+
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Name" id="name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" placeholder="Email" id="email" required>
+
+            <label for="number">Number: </label>
+            <input type="number" placeholder="Number" id="number" required>
+
+            <label for="address">Address: </label>
+            <textarea name="address" id="address" placeholder="Enter Address" required></textarea>
+
+            <label>Select Payment Mode: </label><br>
+
+            <label for="payment-mode">Pay on delivery</label>
+            <input type="radio" id="payment-mode" name="gender" value="male" required>
+
+
+            <div class="buttons">
+                <button type="submit">Order Now</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
