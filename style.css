@@ -155,7 +155,6 @@ button:hover {
     width: 20%;
     float: left;
     margin: 10px;
-    border: 1px solid white;
 }
 
 .checkout {
@@ -328,7 +327,9 @@ img {
 }
 
 @media screen and (max-width: 425px) {
-
+    .container{
+        margin: 0;
+    }
     ul,
     li,
     a,
@@ -341,11 +342,13 @@ img {
     }
 
     .slide-container {
-        margin: 0 auto;
-        width: 50vmin;
-        overflow: hidden;
-        position: relative;
-    
+        width: 100%;
+    }
+    .wrapper {
+        height: 200px;
+    }
+    .wrapper img {
+        width: 100%;
     }
 
     .card {
@@ -372,22 +375,7 @@ img {
         display: flex;
         flex-direction: column;
     }
-    .row {
-        display: flex;
-        flex-direction: row;
-    }
-    .row div {
-        flex: 1;
-        padding: 8px 12px;
-        border: 1px solid #ddd;
-        box-sizing: border-box;
-    }
-    .row div.header {
-        font-weight: bold;
-    }
-    .row div:not(:last-child) {
-        border-right: none;
-    }
+   
     .icon{
         width: 100%;
         display: block;
